@@ -2,15 +2,15 @@
 
 This project was developed as a part of a big data project under the supervision of Smartera 3S (Rights reserved)
 
-##Description
+## Description
 
 A Custom processor that handles the Flowfile from the processor CaptureChangeMySQL and convert it into a Flowfile containing the HQL query that can be executed on Hive.
 
-##Usage
+## Usage
 
 It only generates DML commands (Insert, Update, Delete) and DDL operations not yet implemented
 
-##Steps
+## Steps
 
 1) Inside /SCC-processors run `mvn clean install`
 
@@ -18,7 +18,7 @@ It only generates DML commands (Insert, Update, Delete) and DDL operations not y
 
 3) Run nifi and you can find the new processor named `ConvertJsonToHQL`
 
-##Limitations
+## Limitations
 
 1) It is only available for HQL commands so there must be in Hive the same database that is in SQL with the same schema
 
